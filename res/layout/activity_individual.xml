@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <Button
+        android:id="@+id/individual_button_add"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:text="+" />
+
+    <Button
+        android:id="@+id/individual_button_subtract"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/individual_spinner"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="-" />
+
+    <Spinner
+        android:id="@+id/individual_spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:layout_alignBottom="@+id/individual_button_add"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/individual_button_add"
+        android:layout_toRightOf="@+id/individual_button_subtract" />
+    
+    <ListView
+        android:id="@+id/individual_listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/textView1" >
+
+    </ListView>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/individual_button_subtract"
+        android:layout_toLeftOf="@+id/textView2"
+        android:text=" Name"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/individual_listview"
+        android:layout_alignParentRight="true"
+        android:text="RSVP&apos;S      "
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+</RelativeLayout>

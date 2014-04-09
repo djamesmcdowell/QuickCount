@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" 
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+      xmlns:tools="http://schemas.android.com/tools" >
+
+	<item
+        android:id="@+id/individual_tableview"
+        android:title="SEND"
+        app:showAsAction="always">
+        <menu>
+            <item
+                android:id="@+id/sub_sendtext"
+                android:title="Send Text"/>
+            <item
+                android:id="@+id/sub_sendemail"
+                android:title="Send Email"/>
+        </menu>
+    </item>
+        
+    <item
+        android:id="@+id/individual_tableview"
+        android:icon="@drawable/ic_minus"
+        android:title="delete"
+        app:showAsAction="always">
+        <menu>
+            <item
+                android:id="@+id/sub_minus"
+                android:title="Remove Individual"/>
+        </menu>
+    </item>
+    <item
+        android:id="@+id/action_add"
+        android:icon="@drawable/ic_add"
+        android:title="add"
+        app:showAsAction="always">
+        <menu>
+            <item
+                android:id="@+id/sub_add"
+                android:title="Add Individual"/>
+        </menu>
+    </item>
+
+</menu>
